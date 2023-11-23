@@ -7,9 +7,8 @@ jobs:
     name: depecheck_test
    
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        uses: actions/setup-java@v3
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
           java-version: '17'
