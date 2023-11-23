@@ -9,6 +9,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'marven' 
       - name: Build project with Maven
         run: mvn clean install
       - name: Depcheck
