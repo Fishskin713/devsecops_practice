@@ -12,7 +12,7 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-          cache: 'marven' 
+          cache: 'maven' 
       - name: Build project with Maven
         run: mvn clean install
       - name: Depcheck
